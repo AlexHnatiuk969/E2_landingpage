@@ -1,58 +1,36 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     color: rgb(52, 52, 52);
     list-style: none;
     text-decoration: none;
-
-    
-}
-body{    
+  }
+  body {
     background: linear-gradient(90deg, white 50%, grey 90%);
-
-}
-
-.logo{
-    
-        filter: brightness(1.1);
-        mix-blend-mode: multiply;
-}
-
-
-
-.padre, div ,.logo{
+  }
+  
+  .logo {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    height: 60px;
+  }
+  
+  .nav .links {
     display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-items:flex-start;
-    border-color: black;
-    height: 80px;
-    box-shadow: 2px 0.2px 5px black;
-
-    
-}
-
-
-.contenedorgeneral a{
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-    width: 140px;
-    height: 80px;
-    border-radius: 10px;
-}
-
-.contenedorgeneral a:hover{
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6px;
+    border-bottom: 1px solid black;
+  }
+  
+  .links :hover {
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: linear;
     color: black;
     font-size: 120%;
-    
-}
-
-
-
-
+  }
+  
