@@ -7,11 +7,12 @@
     color: rgb(52, 52, 52);
     list-style: none;
     text-decoration: none;
-  }
+}
   body {
-    background: linear-gradient(90deg, white 50%, grey 90%);
+    background: linear-gradient(90deg, white 50%, #808080 90%);
   }
-  
+
+
   .logo {
     filter: brightness(1.1);
     mix-blend-mode: multiply;
@@ -33,4 +34,78 @@
     color: black;
     font-size: 120%;
   }
+  
+    .ContenidoPrincipal{
+    display: flex;
+    flex-direction:row;
+    justify-content:left;
+    align-items:left;
+    margin-top: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    height:100vh;
+    
+  }
+
+  #Titulo{
+      
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      order: 1;
+      font-size: 4em;
+      text-align: left;
+   width: 350px;
+   height: 600px;
+  }
+  #texto{
+      color: rgb(129, 129, 129);
+      margin-top: 120px;
+      text-align: center;
+      order: 3;
+      width: 700px;
+      height: 500px;
+  }
+
+
+  .imgcontainer{
+      order: 2;
+      margin-left: 150px;
+      margin-top: 10px;
+      width: 700px;
+      height: 500px;
+  }
+
+  .btncontacto{
+      
+    width: 150px;
+    height: 50px; 
+    order: 4;
+      border: none;
+    padding: 15px 30px;
+    border-radius: 999px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+    
+    .btn{
+        background-color: #808080;
+        width: 150px;
+        height: 50px; 
+        order: 4;
+          border: none;
+        padding: 15px 30px;
+        border-radius: 999px;
+        font-weight: bold;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+  
   
