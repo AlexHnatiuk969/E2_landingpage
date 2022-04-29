@@ -7,6 +7,7 @@
     color: rgb(52, 52, 52);
     list-style: none;
     text-decoration: none;
+    
 }
   body {
     background: linear-gradient(90deg, white 50%, #808080 90%);
@@ -43,7 +44,7 @@
     margin-top: 10px;
     text-align: center;
     flex-wrap: wrap;
-    height:100vh;
+    height:100px;
     
   }
 
@@ -58,10 +59,10 @@
   }
   #texto{
       color: rgb(129, 129, 129);
-      margin-top: 120px;
+      margin-top: 50px;
       text-align: center;
       order: 3;
-      width: 700px;
+      width: 1000px;
       height: 500px;
   }
 
@@ -70,15 +71,14 @@
       order: 2;
       margin-left: 150px;
       margin-top: 10px;
-      width: 700px;
-      height: 500px;
+      width: 500px;
+      height: 600px;
   }
 
   .btncontacto{
       
     width: 150px;
     height: 50px; 
-    order: 4;
       border: none;
     padding: 15px 30px;
     border-radius: 999px;
@@ -95,7 +95,6 @@
         background-color: #808080;
         width: 150px;
         height: 50px; 
-        order: 4;
           border: none;
         padding: 15px 30px;
         border-radius: 999px;
@@ -107,5 +106,90 @@
         -webkit-transition-duration: 0.4s;
         transition-duration: 0.4s;
     }
+  .btncontainer{
+    display: flex;
+    order: 4;
+    align-self: flex-end;
+  }
+
   
   
+
+   @media (max-width: 576px)
+   {
+     .nav .links{
+       display: flex;
+       flex-direction: column;
+       }
+
+      .logo{
+        align-self: flex-start;
+      }
+
+      .link:hover{
+        font-size: 101%;
+      }
+
+      .logo{
+        height: 100px;
+      }
+
+      .ContenidoPrincipal{
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+
+      #Titulo{
+        font-size: 2em;
+        width: 360px;
+        height: 150px;
+        text-align: center;
+      }
+
+      #texto{
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 350px;
+        height: 200px;
+        color: rgb(51, 51, 51);
+        text-align: center;
+        order: 2;
+      }
+
+      .imgcontainer{
+        order: 3;
+        margin-left: 10px;
+        width: 300px;
+        height: 300px;
+      }
+      .imgprincipal{
+        width: 300px;
+        height: 250px;
+      }
+    }
+
+  @media (min-width: 576px) and (max-width: 1024px){
+    .ContenidoPrincipal{
+      height: 720px;
+    }
+    .imgcontainer{
+      margin-top: 1px;
+      margin-left: 1px;
+      width: 350px;
+      height: 600px;
+    }
+    .imgprincipal{
+      width: 350px;
+      height: 600px;
+    }
+    #texto{
+      margin-top: 1px;
+      width: 700px;
+      height: 200px;
+      color: rgb(51, 51, 51);
+    }
+  }
+
+
+    
