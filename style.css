@@ -44,7 +44,7 @@
     margin-top: 10px;
     text-align: center;
     flex-wrap: wrap;
-    height:100px;
+    max-height:1000px;
     
   }
 
@@ -52,10 +52,34 @@
       
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       order: 1;
-      font-size: 4em;
       text-align: left;
-   width: 350px;
-   height: 600px;
+      width: 400px;
+      height: 600px;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+      -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+      );
+      background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 65px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
   }
   #texto{
       color: rgb(129, 129, 129);
@@ -106,14 +130,48 @@
         -webkit-transition-duration: 0.4s;
         transition-duration: 0.4s;
     }
-  .btncontainer{
+  /* CARDS */
+
+  .card-container{
     display: flex;
-    order: 4;
-    align-self: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2px 16px;
+    width: 1300px;
+    height: 400px;
   }
 
-  
-  
+  .card{
+    width: 300px;
+    height: 350px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+    border-radius: 5px;
+  }
+
+  .card:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+  }
+  .imgcard{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .cardtittle{
+  width: 300px;
+  height: 50px;
+  font-family:Arial;
+  font-size: 30px;
+  }
+  .cardtext{
+    color: rgb(62, 17, 17);
+  }
+ 
 
    @media (max-width: 576px)
    {
@@ -144,6 +202,8 @@
         width: 360px;
         height: 150px;
         text-align: center;
+
+        
       }
 
       #texto{
@@ -167,7 +227,17 @@
         width: 300px;
         height: 250px;
       }
+    
+      .card-container{
+        flex-direction:column;
+        width: 350px;
+        height: 100vh;
+      }
+
+
     }
+  
+
 
   @media (min-width: 576px) and (max-width: 1024px){
     .ContenidoPrincipal{
@@ -189,7 +259,11 @@
       height: 200px;
       color: rgb(51, 51, 51);
     }
-  }
-
-
-    
+  .card-container{
+    align-items:flex-start;
+    width: 700px;
+    height: 1000px;
+    flex-wrap: wrap;  
+  } 
+  
+}
