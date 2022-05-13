@@ -12,7 +12,7 @@
   body {
     background: linear-gradient(90deg, white 50%, #808080 90%);
   }
-  
+
   audio{
   padding: 0;
   margin:0;
@@ -20,6 +20,7 @@
   height: 50px;
   border-radius: transparent;
 }
+
 .imgrepro{
  width: 100px;
  height: 50px;
@@ -62,9 +63,9 @@
     flex-direction:row;
     justify-content:center;
     align-items:center;
+    flex-wrap: wrap;
     margin-top: 10px;
     text-align: center;
-    flex-wrap: wrap;
     height: 100vh;
     
 
@@ -175,20 +176,42 @@
   .card-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     margin: 200px 0px 0px ;
-    width: 95vw;
+    width: 100vw;
     height: 400px;
+  }
+  .proyectos{
+    width: 100vw;
+    height: 600px;
+  }
+  .card_proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0px 0px ;
+  }
+
+  .proyecto_tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: whitesmoke;
   }
 
   .card{
     width: 300px;
     height: 350px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 50px 10px 10px;
     transition: 0.3s ease;
-    border-radius: 5px;
+    border-radius: 10px;
   }
 
   .card:hover{
@@ -198,7 +221,7 @@
   .imgcard{
     width: 300px;
     height: 200px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
   }
 
   .cardtittle{
@@ -249,11 +272,10 @@
         margin-top: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
-        width: 350px;
+        width: 300px;
         height: 200px;
         color: whitesmoke;
         text-align: center;
-        order: 2;
       }
 
       .imgcontainer{
@@ -263,7 +285,19 @@
       .card-container{
         flex-direction:column;
         width: 100vw;
+        height: 1500px;
         margin-top: 20px;
+      }
+
+      .proyecto_tittle{
+        font-size: 50px;
+      }
+
+      .proyectos{
+        
+          flex-direction:column;
+          width: 100vw;
+          margin-top: 20px;
       }
 
       .card{
@@ -299,11 +333,24 @@
       height: 200px;
       color: whitesmoke;
     }
+
   .card-container{
     align-items:flex-start;
     width: 700px;
-    height: 1000px;
+    height: 900px;
+    margin-bottom: 200px;
     flex-wrap: wrap;  
   } 
+
+  .proyectos{
+    align-items:flex-start;
+    width: 700px;
+    height: 600px;
+    flex-wrap: wrap;  
+   
+  }
+  .btncontainer{
+    display: none;
+  }
   
 }
