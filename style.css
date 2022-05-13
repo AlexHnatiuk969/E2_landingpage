@@ -141,6 +141,19 @@
     width: 500px;
   }
 
+  footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100wv;
+    height: 50px;
+  }
+
+  i{
+    color: blue;
+  }
+
   .btncontacto{
     background-color: #808080;
     width: 150px;
