@@ -12,12 +12,20 @@
   body {
     background: linear-gradient(90deg, white 50%, #808080 90%);
   }
-
+  
   audio{
-  width: 98vw;
-  height: 30px;
+  padding: 0;
+  margin:0;
+  width: 100px;
+  height: 50px;
   border-radius: transparent;
 }
+.imgrepro{
+ width: 100px;
+ height: 50px;
+ border-radius: 20px;
+}
+
 
   .logo {
     /* filter: brightness(1.1); */
@@ -35,6 +43,8 @@
     border-bottom: 1px;
     
   }
+
+
 
   a{
     color: white;
